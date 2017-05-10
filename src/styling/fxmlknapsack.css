@@ -1,0 +1,76 @@
+/*
+ * ***************************************************************************
+ * *                                                                         *   
+ * *                **************************************                   *   
+ * *                *    CODING COMPETITION              *                   *   
+ * *                *                                    *                   *
+ * *                *    Ersteller: Lukas Adler          *                   *
+ * *                *                                    *                   *
+ * *                *    @All Right are reserved         *                   *
+ * *                **************************************                   *
+ * *                                                                         *   
+ * ***************************************************************************
+ */
+
+
+.mainFxmlClass {
+    -fx-background-color: linear-gradient(silver,white); 
+}
+
+.registryFxmlClass {
+    -fx-background-color: linear-gradient(silver,white);   
+}
+
+.separator {
+    -fx-background-color: #0084C2;
+}
+
+.tooltip {
+    -fx-background-color: linear-gradient(white,deepskyblue);
+    -fx-text-fill: black;
+}
+
+#AnchorPane {
+    -fx-border-color: #0084C2;
+    -fx-border-width: 3px;
+}
+
+#btnKSpeichern,
+#btnClose {
+    -fx-background-color: #0084C2;
+    -fx-background-radius: 10px;
+    -fx-border-color: #0084C2;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+}
+
+#btnKSpeichern:hover,
+#btnClose:hover {
+    -fx-background-color: gainsboro;
+    -fx-border-color: #0084C2;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+    -fx-text-fill: #0084C2;
+}
+
+#txtGewicht,
+#txtName {
+    -fx-font-weight: bold;
+    -fx-text-fill: #0084C2;
+}
+
+#txtGewicht,
+#txtName {
+    -fx-background-radius: 30px;    
+    -fx-border-color: #0084C2;    
+    -fx-border-radius: 30px;
+    -fx-border-width: 1px;
+}
+
+#RegisterHeadLabel {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0084C2;    
+}

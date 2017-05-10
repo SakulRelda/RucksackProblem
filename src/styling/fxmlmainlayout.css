@@ -1,0 +1,245 @@
+/*
+ * ***************************************************************************
+ * *                                                                         *   
+ * *                **************************************                   *   
+ * *                *    CODING COMPETITION              *                   *   
+ * *                *                                    *                   *
+ * *                *    Ersteller: Lukas Adler          *                   *
+ * *                *                                    *                   *
+ * *                *    @All Right are reserved         *                   *
+ * *                **************************************                   *
+ * *                                                                         *   
+ * ***************************************************************************
+ */
+
+.mainFxmlClass {
+    -fx-background-color: linear-gradient(silver,white);
+}
+
+
+.tooltip {
+    -fx-background-color: linear-gradient(white,deepskyblue);
+    -fx-text-fill: black;
+}
+
+.tab {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px; 
+    -fx-border-color: #0084C2;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-rotate: 90;
+}
+
+.tab-pane {
+    -fx-background-color: linear-gradient(silver,white);
+    -fx-tab-max-height: 50px;
+    -fx-tab-min-height: 50px;
+    -fx-tab-min-width: 40px;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab:selected {
+    -fx-background-color: #0084C2;
+    -fx-border-width: 2px;
+}
+
+#addFavorites,
+#addRemembered,
+#clearDia,
+#deleteFavorites,
+#deleteRemembered,
+#lookedUp,
+#remToFavorites {
+    -fx-background-color: #0084C2; 
+    -fx-background-radius: 10px; 
+    -fx-border-color: #0084C2;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+}
+
+#addFavorites:hover, 
+#addRemembered:hover,
+#clearDia:hover,
+#deleteFavorites:hover,
+#deleteRemembered:hover,
+#lookedUp:hover,
+#remToFavorites:hover {
+    -fx-background-color: gainsboro;
+    -fx-border-color: #0084C2;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+    -fx-text-fill: #0084C2;
+}
+
+
+
+.list-cell:hover {
+    -fx-text-fill: #0084C2;
+}
+
+.list-cell:filled:selected {
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-background-radius: 0 0 10 10;
+    -fx-border-radius: 0 0 10 10;
+}
+
+.table-view .column-header {
+    -fx-border-color: transparent white transparent  transparent;
+    -fx-border-width: 0 1 0 0;
+}
+    
+.table-view .column-header *.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+#seperator {
+    -fx-background-color: #0084C2;
+}
+
+.table-view .column-header, table-view .filler {
+    -fx-background-color: #0084C2;
+    -fx-cursor: hand;
+}
+
+.table-view .scroll-bar:hover {
+    -fx-cursor: hand;
+}
+
+
+.chart-legend {
+    -fx-border-color: #0084C2;
+    -fx-border-width: 2px;
+}
+
+.chart-legend .label{
+    -fx-text-fill: #0084C2;
+    -fx-font-weight: bold;
+}
+
+.combo-box {
+    -fx-background-color: #0084C2;
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-color: #0084C2;
+    -fx-border-radius: 10 10 0 0;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+.combo-box .list-view {
+    -fx-background-radius: 0 0 10 10;
+    -fx-border-color: #0084C2;
+    -fx-border-radius: 0 0 10 10;
+    -fx-border-width: 1px;
+    -fx-text-fill: #0084C2;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-border-color: #0084C2;
+    -fx-border-width: 1px;
+    -fx-text-fill: #0084C2;
+    -fx-prompt-text-fill: #0084C2;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #0084C2;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+}
+
+.axis-label {
+    -fx-text-fill: #0084C2;
+}
+
+.axis {
+    -fx-tick-label-fill: #0084C2;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+
+.axis-tick-mark {
+    -fx-stroke: #0084C2;
+}
+
+.axis-minor-tick-mark {
+    -fx-stroke: black;
+}
+
+.mainFxmlClass {
+    -fx-background-color: linear-gradient(silver,white);
+}
+
+.tooltip {
+    -fx-background-color: linear-gradient(white,deepskyblue);
+    -fx-text-fill: black;
+}
+
+#BottomLine {
+    -fx-background-color: #0084C2;
+}
+
+#MenuBarMain {
+    -fx-background-color: #0084C2;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-cursor: hand;    
+}
+
+.menu-item .label {   
+    -fx-text-fill: #0084C2;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: white;
+}
+
+.button{
+    -fx-background-color: #0084C2;
+    -fx-background-radius: 10px;
+    -fx-border-color: #0084C2;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: gainsboro;
+    -fx-border-color: #0084C2;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+    -fx-text-fill: #0084C2;
+}
+
+#loginButton {
+    -fx-background-color: #0084C2;
+    -fx-background-radius: 10px;
+    -fx-border-color: #0084C2;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-text-fill: white; 
+}
+
+#loginButton:hover {
+    -fx-background-color: gainsboro;
+    -fx-border-color: #0084C2;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+    -fx-text-fill: #0084C2;
+}
+
+

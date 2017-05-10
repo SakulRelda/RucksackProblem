@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../styling/fxmlmainlayout.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLMainLayoutController">
+   <children>
+      <BorderPane layoutX="239.0" layoutY="96.0" prefHeight="496.0" prefWidth="839.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <Separator id="seperator" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <TabPane fx:id="mainTab" prefHeight="200.0" prefWidth="200.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab>
+                     <graphic>
+                        <ImageView fitHeight="49.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" rotate="20.0">
+                           <image>
+                              <Image url="@../basic/pictures/garbage.png" />
+                           </image>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </ImageView>
+                     </graphic>
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <TableView fx:id="tableKnapsackElements" />
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="btnKEAdd" mnemonicParsing="false" onAction="#addKnapsackElement" text="Hinzufügen">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="btnKEDelete" mnemonicParsing="false" onAction="#deleteKnapsackElement" text="Löschen">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="btnRandomElementGenerator" mnemonicParsing="false" onAction="#generateRandomElement" text="Zufallsgenerator">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                </Tab>
+                <Tab>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" rotate="20.0">
+                           <image>
+                              <Image url="@../basic/pictures/Rucksack.png" />
+                           </image>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </ImageView>
+                     </graphic>
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <TableView fx:id="tableKnapsack" />
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="btnKAdd" mnemonicParsing="false" onAction="#addKnapsack" text="Hinzufügen">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="btnKDelete" mnemonicParsing="false" onAction="#deleteKnapsack" text="Löschen">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="btnRandomKnapsackGenerator" mnemonicParsing="false" onAction="#generateRandomKnapsack" text="Zufallsgenerator">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                </Tab>
+                  <Tab>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../basic/pictures/calculator-512.png" />
+                           </image>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </ImageView>
+                     </graphic>
+                     <content>
+                        <VBox>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <TableView fx:id="tableKECalc" prefHeight="304.0" prefWidth="265.0" />
+                                    <TableView fx:id="tableKCalc" prefHeight="336.0" prefWidth="273.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="539.0">
+                                 <children>
+                                    <ComboBox fx:id="cmbAlgorithm" prefWidth="150.0">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                    <Button fx:id="btnCalculate" mnemonicParsing="false" onAction="#execAlgorithm" text="Berechnen">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
